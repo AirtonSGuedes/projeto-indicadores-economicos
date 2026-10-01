@@ -37,6 +37,42 @@ O pipeline consome dados atualizados diretamente das séries temporais do Sistem
 
 ---
 
+## 💡 Principais Análises & Insights de Negócio
+
+A partir do acompanhamento integrado das séries temporais no dashboard, é possível extrair diagnósticos macroeconômicos fundamentais para o planejamento financeiro e tomada de decisão executiva:
+
+---
+
+### 1. 💵 Relação Câmbio vs. Inflação (Dólar PTAX vs. IPCA)
+* **Comportamento Observado:** O Dólar PTAX apresentou períodos de alta volatilidade, oscilando entre a faixa de **R$ 4,98** e picos acima de **R$ 5,70**.
+* **Impacto no Negócio:** 
+  * A valorização contínua do Dólar encarece custos operacionais atrelados a insumos importados, fretes internacionais e *commodities* (energia, grãos e combustíveis).
+  * Esse encarecimento da cadeia produtiva gera repasse gradual de preços ao consumidor final, pressionando o **IPCA** com defasagem de alguns meses (*pass-through* cambial).
+
+---
+
+### 2. 🏛️ Política Monetária & Custo de Capital (Taxa Selic)
+* **Comportamento Observado:** A Taxa Selic atingiu patamares elevados (chegando a **13,75% a.a.**) antes de iniciar ciclos de ajuste e manutenção.
+* **Impacto no Negócio:**
+  * **Restrição de Crédito:** Juros elevados tornam financiamentos e empréstimos corporativos mais caros, desestimulando grandes investimentos em expansão (*CAPEX*).
+  * **Atração do Capital:** Taxas de juros altas atraem capital para ativos de Renda Fixa, reduzindo a liquidez do mercado consumidor e forçando a desaceleração da inflação.
+
+---
+
+### 3. 📈 Ritmo Econômico vs. Pressão de Demanda (IBC-Br vs. IPCA)
+* **Comportamento Observado:** O índice **IBC-Br** (prévia do PIB) permite mensurar se a atividade produtiva do país está em aceleração ou desaceleração.
+* **Impacto no Negócio:**
+  * Quando a atividade econômica (IBC-Br) cresce acima da capacidade produtiva instalada, cria-se escassez de oferta, impulsionando a inflação de demanda no **IPCA**.
+  * A análise conjunta permite antecipar cenários de retração ou aquecimento do mercado consumidor.
+
+---
+
+### 🎯 Aplicação Prática na Tomada de Decisão
+* **Planejamento Orçamentário (*Budgeting*):** Ajuste de premissas financeiras para o ano seguinte com base nas projeções de inflação e taxa de juros.
+* **Gestão de Risco & Câmbio (*Hedge*):** Identificação de momentos oportunos para travamento de contratos de importação/exportação com base na tendência do Dólar PTAX.
+* **Projeção de Dívida:** Acompanhamento do custo de
+
+
 ## 🛠️ Tecnologias e Conceitos Aplicados
 
 * **Python 3:** Ingestão de APIs REST (`requests`), manipulação e estruturação de dados (`pandas`), gestão de datas e tratamento de erros.
@@ -47,7 +83,7 @@ O pipeline consome dados atualizados diretamente das séries temporais do Sistem
   * Formatação condicional e dynamic measures para prevenção de agregações incorretas (Soma vs. Média / Último valor).
 * **UI/UX Design Corporativo:** Containerização visual (Card design), sombras suaves, paleta de cores executiva (Navy Blue & Slate Gray) e ergonomia visual.
 
----
+
 
 ## 💻 Estrutura do Projeto
 
